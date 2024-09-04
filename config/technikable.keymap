@@ -35,18 +35,18 @@
         base_layer {
             label = "Base";
             bindings = <
-&kp TAB           &kp Q  &kp W         &kp E             &kp R      &kp T                  &kp Y      &kp U             &kp I              &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL ESCAPE  &kp A  &kp S         &kp D             &kp F      &kp G                  &kp H      &kp J             &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT         &kp Z  &kp X         &kp C             &kp V      &kp B                  &kp N      &kp M             &kp COMMA          &kp DOT  &kp FSLH  &kp RET
-                         &kp LEFT_ALT  &kp LEFT_COMMAND  &mo NAV_L  &kp DELETE  &kp SPACE  &mo NUM_L  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp TAB           &kp Q  &kp W         &kp E             &kp R      &kp T                     &kp Y      &kp U             &kp I              &kp O    &kp P     &kp BACKSLASH
+&mt LCTRL ESCAPE  &kp A  &kp S         &kp D             &kp F      &kp G                     &kp H      &kp J             &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT         &kp Z  &kp X         &kp C             &kp V      &kp B                     &kp N      &kp M             &kp COMMA          &kp DOT  &kp FSLH  &kp RET
+                         &kp LEFT_ALT  &kp LEFT_COMMAND  &mo NAV_L  &kp BACKSPACE  &kp SPACE  &mo NUM_L  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR  &trans        &trans        &trans        &trans        &trans                &trans  &trans    &trans          &trans        &trans     &kp DEL
-&trans      &trans        &trans        &trans        &trans        &trans                &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&bt BT_CLR  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                &kp F6  &kp F7    &kp F8          &kp F9        &kp F10    &kp F11
+&trans      &trans        &trans        &trans        &trans        &trans                &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp F12
 &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp HOME  &kp PG_DN       &kp PG_UP     &kp END    &trans
                           &trans        &trans        &trans        &trans        &trans  &trans  &trans    &trans
             >;
@@ -55,10 +55,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans  &kp F1  &kp F2     &kp F3  &kp F4  &kp F5         &kp F6          &kp F7    &kp F8        &kp F9     &kp F10  &kp F11
-&trans  &trans  &trans     &trans  &trans  &trans         &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans   &kp F12
-&trans  &trans  &trans     &trans  &trans  &trans         &trans          &trans    &trans        &trans     &trans   &trans
-                &kp TILDE  &trans  &trans  &none   &none  &trans          &trans    &trans
+&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp NUMBER_6    &kp N7    &kp N8        &kp N9     &kp N0  &kp MINUS
+&trans     &trans        &trans        &trans        &trans        &trans         &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &kp F12
+&trans     &trans        &trans        &trans        &trans        &trans         &trans          &trans    &trans        &trans     &trans  &trans
+                         &kp TILDE     &trans        &trans        &none   &none  &trans          &trans    &trans
             >;
         };
 
